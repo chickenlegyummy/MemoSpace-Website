@@ -17,18 +17,33 @@
             <a href="index.html" class="nav-logo">
                 <span class="logo-text">MemoSpace</span>
             </a>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="language-btn glass-btn">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text">English</span>
+                    <span class="lang-arrow">↓</span>
+                </button>
+                <div class="language-dropdown">
+                    <a href="#" class="language-option" data-lang="en">English</a>
+                    <a href="#" class="language-option" data-lang="zh-TW">繁體中文</a>
+                    <a href="#" class="language-option" data-lang="zh-CN">简体中文</a>
+                </div>
+            </div>
+            
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link" data-en="Home" data-zh-TW="首頁" data-zh-CN="首页">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="index.html#features" class="nav-link" data-en="Features" data-zh-TW="功能特色" data-zh-CN="功能特色">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="about.html" class="nav-link active" data-en="About" data-zh-TW="關於我們" data-zh-CN="关于我们">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-zh-TW="聯絡我們" data-zh-CN="联系我们">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -46,9 +61,9 @@
             <div class="container">
                 <div class="about-hero-content glass-panel">
                     <h1 class="about-title">
-                        About <span class="gradient-text">MemoSpace</span>
+                        <span data-en="About" data-zh-TW="關於" data-zh-CN="关于">About</span> <span class="gradient-text">MemoSpace</span>
                     </h1>
-                    <p class="about-subtitle">
+                    <p class="about-subtitle" data-en="We're a team of passionate innovators dedicated to revolutionizing how humans interact with their memories and ideas in spatial computing environments." data-zh-TW="我們是一支充滿熱忱的創新團隊，致力於革新人類在空間運算環境中與記憶和想法互動的方式。" data-zh-CN="我们是一支充满热忱的创新团队，致力于革新人类在空间计算环境中与记忆和想法互动的方式。">
                         We're a team of passionate innovators dedicated to revolutionizing how humans interact with their memories and ideas in spatial computing environments.
                     </p>
                 </div>
@@ -60,19 +75,19 @@
             <div class="container">
                 <div class="mission-content">
                     <div class="mission-text">
-                        <h2 class="section-title gradient-text">Our Mission</h2>
-                        <p>
+                        <h2 class="section-title gradient-text" data-en="Our Mission" data-zh-TW="我們的使命" data-zh-CN="我们的使命">Our Mission</h2>
+                        <p data-en="At MemoSpace, we believe that the future of computing lies in seamlessly blending digital experiences with our physical world. Our mission is to create intuitive, beautiful, and powerful tools that help people organize, explore, and connect their memories in ways never before possible." data-zh-TW="在 MemoSpace，我們相信運算的未來在於將數位體驗與我們的物理世界無縫融合。我們的使命是創造直覺、美觀且強大的工具，幫助人們以前所未有的方式整理、探索和連結他們的記憶。" data-zh-CN="在 MemoSpace，我们相信计算的未来在于将数字体验与我们的物理世界无缝融合。我们的使命是创造直观、美观且强大的工具，帮助人们以前所未有的方式整理、探索和连接他们的记忆。">
                             <!-- PLACEHOLDER: Replace with your company mission -->
                             At MemoSpace, we believe that the future of computing lies in seamlessly blending digital experiences with our physical world. Our mission is to create intuitive, beautiful, and powerful tools that help people organize, explore, and connect their memories in ways never before possible.
                         </p>
-                        <p>
+                        <p data-en="We're not just building an app – we're crafting an entirely new way to think about personal knowledge management in the age of spatial computing. Every interaction is designed to feel natural, every visualization meaningful, and every connection purposeful." data-zh-TW="我們不只是在開發一個應用程式 – 我們正在打造一種全新的方式來思考空間運算時代的個人知識管理。每一個互動都設計得自然，每一個視覺化都有意義，每一個連結都有目的。" data-zh-CN="我们不只是在开发一个应用程序 – 我们正在打造一种全新的方式来思考空间计算时代的个人知识管理。每一个互动都设计得自然，每一个可视化都有意义，每一个连接都有目的。">
                             <!-- PLACEHOLDER: Add additional mission details -->
                             We're not just building an app – we're crafting an entirely new way to think about personal knowledge management in the age of spatial computing. Every interaction is designed to feel natural, every visualization meaningful, and every connection purposeful.
                         </p>
                     </div>
                     <div class="mission-visual glass-card">
                         <!-- PLACEHOLDER: Replace with your mission image -->
-                        <div class="placeholder-image">
+                        <div class="placeholder-image" data-en="Mission Visualization Image<br><small>Suggested: Team working together, futuristic workspace, or concept art</small>" data-zh-TW="使命視覺化圖片<br><small>建議：團隊協作、未來工作空間或概念藝術</small>" data-zh-CN="使命可视化图片<br><small>建议：团队协作、未来工作空间或概念艺术</small>">
                             Mission Visualization Image
                             <br><small>Suggested: Team working together, futuristic workspace, or concept art</small>
                         </div>
@@ -85,8 +100,8 @@
         <section class="team">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title gradient-text">Meet Our Team</h2>
-                    <p class="section-subtitle">
+                    <h2 class="section-title gradient-text" data-en="Meet Our Team" data-zh-TW="認識我們的團隊" data-zh-CN="认识我们的团队">Meet Our Team</h2>
+                    <p class="section-subtitle" data-en="The visionaries and builders behind MemoSpace" data-zh-TW="MemoSpace 背後的遠見者和建設者" data-zh-CN="MemoSpace 背后的远见者和建设者">
                         The visionaries and builders behind MemoSpace
                     </p>
                 </div>
@@ -237,8 +252,8 @@
         <section class="values">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title gradient-text">Our Values</h2>
-                    <p class="section-subtitle">
+                    <h2 class="section-title gradient-text" data-i18n="about.values.title">Our Values</h2>
+                    <p class="section-subtitle" data-i18n="about.values.subtitle">
                         The principles that guide everything we do
                     </p>
                 </div>
@@ -368,7 +383,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 MemoSpace. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 MemoSpace. All rights reserved.</p>
             </div>
         </div>
     </footer>

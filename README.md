@@ -1,17 +1,35 @@
-# MemoSpace - Vision OS Website Template
+# MemoSpace - Vision OS Project Website
 
-A beautiful, modern website template showcasing a Vision OS project with Apple-inspired liquid glass aesthetics and glassmorphism elements.
+A stunning, Apple-inspired static website template showcasing a Vision OS project with glassmorphism design and multi-language support.
 
 ## ✨ Features
 
-- **Liquid Glass Design**: Semi-transparent backgrounds with blur effects
-- **Apple-Inspired Aesthetics**: Clean typography and minimalist design
-- **Responsive Layout**: Works perfectly on all devices
-- **Accessibility Focused**: ARIA labels, keyboard navigation, and screen reader support
-- **Performance Optimized**: Lightweight and fast-loading
+### 🎨 Design & Visual Effects
+- **Apple-inspired Design**: Authentic glassmorphism effects with Liquid Glass styling
+- **iOS 26 Color Palette**: Synchronized with Apple's latest color system
+- **Enhanced Visual Effects**: Advanced animations, particle systems, and morphing glows
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Accessibility**: WCAG compliant with skip links and keyboard navigation
+
+### 🌐 Multi-Language Support
+- **3 Languages**: English, 繁體中文 (Traditional Chinese), 简体中文 (Simplified Chinese)
+- **Smart Detection**: Automatic language detection from browser/URL/localStorage
+- **Seamless Switching**: Dropdown language switcher with live content updates
+- **Complete Translation**: All UI elements, content, and form placeholders translated
+
+### 📱 Interactive Components
+- **Glassmorphism Navigation**: Backdrop-blur effects with Apple-style transitions
+- **Feature Cards**: 6 customizable feature showcases with hover animations
+- **Contact Forms**: Formspree integration with full validation
+- **Particle System**: Ambient background effects for enhanced immersion
+- **Team Profiles**: Professional team member showcases
+
+### 🚀 Performance & Tech
+- **Pure HTML/CSS/JavaScript**: No framework dependencies
+- **Optimized Assets**: Efficient loading and caching strategies
+- **SEO Ready**: Semantic HTML with proper meta tags
 - **Form Integration**: Ready for Formspree or Netlify Forms
-- **Animation-Rich**: Smooth transitions and hover effects
-- **SEO Ready**: Proper meta tags and semantic HTML
+- **Cross-browser**: Support for modern browsers with fallbacks
 
 ## 🏗️ Structure
 

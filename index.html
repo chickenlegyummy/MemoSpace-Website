@@ -15,20 +15,35 @@
     <nav class="navbar glass-nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-text">MemoSpace</span>
+                <span class="logo-text" data-i18n="hero.title">MemoSpace</span>
             </a>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="language-btn glass-btn">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text">English</span>
+                    <span class="lang-arrow">↓</span>
+                </button>
+                <div class="language-dropdown">
+                    <a href="#" class="language-option" data-lang="en">English</a>
+                    <a href="#" class="language-option" data-lang="zh-TW">繁體中文</a>
+                    <a href="#" class="language-option" data-lang="zh-CN">简体中文</a>
+                </div>
+            </div>
+            
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-en="Home" data-zh-TW="首頁" data-zh-CN="首页">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#features" class="nav-link" data-en="Features" data-zh-TW="功能特色" data-zh-CN="功能特色">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
+                    <a href="about.html" class="nav-link" data-en="About" data-zh-TW="關於我們" data-zh-CN="关于我们">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-zh-TW="聯絡我們" data-zh-CN="联系我们">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -51,20 +66,20 @@
         <div class="hero-content glass-panel">
             <h1 class="hero-title">
                 <!-- PLACEHOLDER: Update your project name -->
-                <span class="gradient-text">MemoSpace</span>
-                <br>Reimagined for Vision OS
+                <span class="gradient-text" data-en="MemoSpace" data-zh-TW="MemoSpace" data-zh-CN="MemoSpace">MemoSpace</span>
+                <br><span data-en="Reimagined for Vision OS" data-zh-TW="為 Vision OS 重新設計" data-zh-CN="为 Vision OS 重新设计">Reimagined for Vision OS</span>
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-en="Experience spatial computing like never before. Organize your memories, thoughts, and ideas in a three-dimensional workspace that adapts to your mind." data-zh-TW="體驗前所未有的空間運算。在適應您思維的三維工作空間中整理您的記憶、想法和創意。" data-zh-CN="体验前所未有的空间计算。在适应您思维的三维工作空间中整理您的记忆、想法和创意。">
                 <!-- PLACEHOLDER: Update your project description -->
                 Experience spatial computing like never before. Organize your memories, 
                 thoughts, and ideas in a three-dimensional workspace that adapts to your mind.
             </p>
             <div class="hero-buttons">
                 <button class="btn btn-primary glass-btn">
-                    <span>Try the Experience</span>
+                    <span data-en="Try the Experience" data-zh-TW="體驗產品" data-zh-CN="体验产品">Try the Experience</span>
                 </button>
                 <button class="btn btn-secondary glass-btn">
-                    <span>Watch Demo</span>
+                    <span data-en="Watch Demo" data-zh-TW="觀看示範" data-zh-CN="观看演示">Watch Demo</span>
                 </button>
             </div>
         </div>
@@ -77,8 +92,8 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title gradient-text">Revolutionary Features</h2>
-                <p class="section-subtitle">
+                <h2 class="section-title gradient-text" data-en="Revolutionary Features" data-zh-TW="革命性功能" data-zh-CN="革命性功能">Revolutionary Features</h2>
+                <p class="section-subtitle" data-en="Designed for the future of spatial computing" data-zh-TW="為空間運算的未來而設計" data-zh-CN="为空间计算的未来而设计">
                     <!-- PLACEHOLDER: Update features section subtitle -->
                     Designed for the future of spatial computing
                 </p>
@@ -93,8 +108,8 @@
                             <path d="m2 12 10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Spatial Organization</h3>
-                    <p class="feature-description">
+                    <h3 class="feature-title" data-en="Spatial Organization" data-zh-TW="空間組織" data-zh-CN="空间组织">Spatial Organization</h3>
+                    <p class="feature-description" data-en="Organize your memories in three-dimensional space with intuitive gestures and eye tracking." data-zh-TW="透過直覺手勢和眼球追蹤，在三維空間中整理您的記憶。" data-zh-CN="通过直观手势和眼球追踪，在三维空间中整理您的记忆。">
                         Organize your memories in three-dimensional space with intuitive gestures and eye tracking.
                     </p>
                 </div>
@@ -106,8 +121,8 @@
                             <path d="m12 1 3 6 6 3-6 3-3 6-3-6-6-3 6-3 3-6z" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">AI-Powered Insights</h3>
-                    <p class="feature-description">
+                    <h3 class="feature-title" data-en="AI-Powered Insights" data-zh-TW="AI 驅動洞察" data-zh-CN="AI 驱动洞察">AI-Powered Insights</h3>
+                    <p class="feature-description" data-en="Intelligent suggestions and connections between your memories powered by advanced machine learning." data-zh-TW="由先進機器學習技術驅動的智能建議和記憶之間的連結。" data-zh-CN="由先进机器学习技术驱动的智能建议和记忆之间的连接。">
                         Intelligent suggestions and connections between your memories powered by advanced machine learning.
                     </p>
                 </div>
@@ -120,8 +135,8 @@
                             <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Seamless Sync</h3>
-                    <p class="feature-description">
+                    <h3 class="feature-title" data-en="Seamless Sync" data-zh-TW="無縫同步" data-zh-CN="无缝同步">Seamless Sync</h3>
+                    <p class="feature-description" data-en="Your memories sync instantly across all your Apple devices with end-to-end encryption." data-zh-TW="您的記憶透過端對端加密，可在所有 Apple 裝置間即時同步。" data-zh-CN="您的记忆通过端到端加密，可在所有 Apple 设备间即时同步。">
                         Your memories sync instantly across all your Apple devices with end-to-end encryption.
                     </p>
                 </div>
@@ -134,8 +149,8 @@
                             <path d="m2 12 10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Immersive Environments</h3>
-                    <p class="feature-description">
+                    <h3 class="feature-title" data-en="Immersive Environments" data-zh-TW="沉浸式環境" data-zh-CN="沉浸式环境">Immersive Environments</h3>
+                    <p class="feature-description" data-en="Create and customize virtual environments that enhance your focus and creativity." data-zh-TW="創建和自定義虛擬環境，提升您的專注力和創造力。" data-zh-CN="创建和自定义虚拟环境，提升您的专注力和创造力。">
                         Create and customize virtual environments that enhance your focus and creativity.
                     </p>
                 </div>
@@ -148,8 +163,8 @@
                             <path d="m22 9-3 3-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Collaborative Spaces</h3>
-                    <p class="feature-description">
+                    <h3 class="feature-title" data-en="Collaborative Spaces" data-zh-TW="協作空間" data-zh-CN="协作空间">Collaborative Spaces</h3>
+                    <p class="feature-description" data-en="Share and collaborate on memory spaces with friends and family in real-time." data-zh-TW="與朋友和家人即時分享和協作記憶空間。" data-zh-CN="与朋友和家人实时分享和协作记忆空间。">
                         Share and collaborate on memory spaces with friends and family in real-time.
                     </p>
                 </div>
@@ -162,8 +177,8 @@
                             <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Rich Media Support</h3>
-                    <p class="feature-description">
+                    <h3 class="feature-title" data-en="Rich Media Support" data-zh-TW="豐富媒體支援" data-zh-CN="丰富媒体支持">Rich Media Support</h3>
+                    <p class="feature-description" data-en="Support for photos, videos, 3D models, and spatial audio in your memory collections." data-zh-TW="在您的記憶收藏中支援照片、影片、3D 模型和空間音訊。" data-zh-CN="在您的记忆收藏中支持照片、视频、3D 模型和空间音频。">
                         Support for photos, videos, 3D models, and spatial audio in your memory collections.
                     </p>
                 </div>
@@ -175,13 +190,13 @@
     <section class="demo">
         <div class="container">
             <div class="demo-content glass-panel">
-                <h2 class="demo-title">See MemoSpace in Action</h2>
-                <p class="demo-description">
+                <h2 class="demo-title" data-en="See MemoSpace in Action" data-zh-TW="觀看 MemoSpace 實際運作" data-zh-CN="观看 MemoSpace 实际运作">See MemoSpace in Action</h2>
+                <p class="demo-description" data-en="Experience the future of memory organization with our interactive demo" data-zh-TW="透過我們的互動式示範體驗記憶整理的未來" data-zh-CN="通过我们的互动式演示体验记忆整理的未来">
                     Experience the future of memory organization with our interactive demo
                 </p>
                 <div class="demo-video">
                     <!-- PLACEHOLDER: Replace with your demo video -->
-                    <div class="placeholder-image" style="min-height: 400px;">
+                    <div class="placeholder-image" style="min-height: 400px;" data-en="Demo Video Placeholder<br><small>Add your demo video: assets/demo-video.mp4</small>" data-zh-TW="示範影片預留位置<br><small>新增您的示範影片：assets/demo-video.mp4</small>" data-zh-CN="演示视频占位符<br><small>添加您的演示视频：assets/demo-video.mp4</small>">
                         Demo Video Placeholder
                         <br><small>Add your demo video: assets/demo-video.mp4</small>
                     </div>
@@ -202,37 +217,37 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3 class="footer-logo">MemoSpace</h3>
-                    <p class="footer-tagline">Reimagining spatial computing</p>
+                    <p class="footer-tagline" data-en="Reimagining spatial computing" data-zh-TW="重新想像空間運算" data-zh-CN="重新想象空间计算">Reimagining spatial computing</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Product</h4>
+                        <h4 data-en="Product" data-zh-TW="產品" data-zh-CN="产品">Product</h4>
                         <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#">Download</a></li>
-                            <li><a href="#">System Requirements</a></li>
+                            <li><a href="#features" data-en="Features" data-zh-TW="功能特色" data-zh-CN="功能特色">Features</a></li>
+                            <li><a href="#" data-en="Download" data-zh-TW="下載" data-zh-CN="下载">Download</a></li>
+                            <li><a href="#" data-en="System Requirements" data-zh-TW="系統需求" data-zh-CN="系统要求">System Requirements</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Company</h4>
+                        <h4 data-en="Company" data-zh-TW="公司" data-zh-CN="公司">Company</h4>
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html" data-en="About Us" data-zh-TW="關於我們" data-zh-CN="关于我们">About Us</a></li>
+                            <li><a href="#" data-en="Careers" data-zh-TW="職涯機會" data-zh-CN="职业机会">Careers</a></li>
+                            <li><a href="contact.html" data-en="Contact" data-zh-TW="聯絡我們" data-zh-CN="联系我们">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Support</h4>
+                        <h4 data-en="Support" data-zh-TW="支援" data-zh-CN="支持">Support</h4>
                         <ul>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#" data-en="Help Center" data-zh-TW="幫助中心" data-zh-CN="帮助中心">Help Center</a></li>
+                            <li><a href="#" data-en="Privacy Policy" data-zh-TW="隱私政策" data-zh-CN="隐私政策">Privacy Policy</a></li>
+                            <li><a href="#" data-en="Terms of Service" data-zh-TW="服務條款" data-zh-CN="服务条款">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 MemoSpace. All rights reserved.</p>
+                <p data-en="&copy; 2025 MemoSpace. All rights reserved." data-zh-TW="&copy; 2025 MemoSpace. 版權所有。" data-zh-CN="&copy; 2025 MemoSpace. 版权所有。">&copy; 2025 MemoSpace. All rights reserved.</p>
             </div>
         </div>
     </footer>

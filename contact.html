@@ -17,18 +17,33 @@
             <a href="index.html" class="nav-logo">
                 <span class="logo-text">MemoSpace</span>
             </a>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="language-btn glass-btn">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text">English</span>
+                    <span class="lang-arrow">↓</span>
+                </button>
+                <div class="language-dropdown">
+                    <a href="#" class="language-option" data-lang="en">English</a>
+                    <a href="#" class="language-option" data-lang="zh-TW">繁體中文</a>
+                    <a href="#" class="language-option" data-lang="zh-CN">简体中文</a>
+                </div>
+            </div>
+            
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link" data-en="Home" data-zh-TW="首頁" data-zh-CN="首页">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="index.html#features" class="nav-link" data-en="Features" data-zh-TW="功能特色" data-zh-CN="功能特色">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
+                    <a href="about.html" class="nav-link" data-en="About" data-zh-TW="關於我們" data-zh-CN="关于我们">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <a href="contact.html" class="nav-link active" data-en="Contact" data-zh-TW="聯絡我們" data-zh-CN="联系我们">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -46,9 +61,9 @@
             <div class="container">
                 <div class="contact-hero-content glass-panel">
                     <h1 class="contact-title">
-                        Get in <span class="gradient-text">Touch</span>
+                        <span data-en="Get in Touch" data-zh-TW="與我們聯絡" data-zh-CN="与我们联系">Get in Touch</span>
                     </h1>
-                    <p class="contact-subtitle">
+                    <p class="contact-subtitle" data-en="Have a question about MemoSpace? Want to join our beta program? We'd love to hear from you." data-zh-TW="對 MemoSpace 有疑問嗎？想加入我們的測試版計劃嗎？我們很樂意聽到您的聲音。" data-zh-CN="对 MemoSpace 有疑问吗？想加入我们的测试版计划吗？我们很乐意听到您的声音。">
                         Have a question about MemoSpace? Want to join our beta program? 
                         We'd love to hear from you.
                     </p>
@@ -61,7 +76,7 @@
             <div class="container">
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h2 class="contact-info-title gradient-text">Let's Start a Conversation</h2>
+                        <h2 class="contact-info-title gradient-text" data-en="Send us a message" data-zh-TW="發送訊息給我們" data-zh-CN="发送消息给我们">Send us a message</h2>
                         <p class="contact-info-text">
                             <!-- PLACEHOLDER: Customize contact description -->
                             Whether you're interested in our beta program, have feedback to share, 
@@ -128,59 +143,63 @@
                             <!-- PLACEHOLDER: Replace YOUR_FORM_ID with your actual Formspree form ID -->
                             <!-- Alternative: Use Netlify Forms by adding netlify attribute to form tag -->
                             
-                            <h3 class="form-title">Send us a message</h3>
+                            <h3 class="form-title" data-i18n="contact.form.title">Send us a message</h3>
                             
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <label for="firstName" class="form-label" data-i18n="contact.form.firstName">First Name *</label>
                                     <input 
                                         type="text" 
                                         id="firstName" 
                                         name="firstName" 
                                         class="form-input" 
                                         required
+                                        data-i18n="contact.form.firstName"
                                         placeholder="Your first name"
                                     >
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <label for="lastName" class="form-label" data-i18n="contact.form.lastName">Last Name *</label>
                                     <input 
                                         type="text" 
                                         id="lastName" 
                                         name="lastName" 
                                         class="form-input" 
                                         required
+                                        data-i18n="contact.form.lastName"
                                         placeholder="Your last name"
                                     >
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="email" class="form-label">Email Address *</label>
+                                <label for="email" class="form-label" data-i18n="contact.form.email">Email Address *</label>
                                 <input 
                                     type="email" 
                                     id="email" 
                                     name="email" 
                                     class="form-input" 
                                     required
+                                    data-i18n="contact.form.email"
                                     placeholder="your.email@example.com"
                                 >
                             </div>
 
                             <div class="form-group">
-                                <label for="company" class="form-label">Company (Optional)</label>
+                                <label for="company" class="form-label" data-i18n="contact.form.company">Company (Optional)</label>
                                 <input 
                                     type="text" 
                                     id="company" 
                                     name="company" 
                                     class="form-input" 
+                                    data-i18n="contact.form.company"
                                     placeholder="Your company name"
                                 >
                             </div>
 
                             <div class="form-group">
-                                <label for="subject" class="form-label">Subject *</label>
+                                <label for="subject" class="form-label" data-i18n="contact.form.subject">Subject *</label>
                                 <select id="subject" name="subject" class="form-input" required>
                                     <option value="">Please select a topic</option>
                                     <option value="beta">Beta Program Interest</option>
@@ -193,12 +212,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="message" class="form-label">Message *</label>
+                                <label for="message" class="form-label" data-i18n="contact.form.message">Message *</label>
                                 <textarea 
                                     id="message" 
                                     name="message" 
                                     class="form-textarea" 
                                     required
+                                    data-i18n="contact.form.message"
                                     placeholder="Tell us more about your inquiry..."
                                     rows="6"
                                 ></textarea>
@@ -221,7 +241,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary form-submit">
-                                <span>Send Message</span>
+                                <span data-i18n="contact.form.submit">Send Message</span>
                             </button>
 
                             <!-- Hidden fields for spam protection -->
@@ -338,7 +358,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 MemoSpace. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 MemoSpace. All rights reserved.</p>
             </div>
         </div>
     </footer>

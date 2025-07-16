@@ -359,3 +359,182 @@ if (!supportsBackdropFilter()) {
     `;
     document.head.appendChild(style);
 }
+
+// ===== LANGUAGE SWITCHER FUNCTIONALITY =====
+
+// Simple language switching using data attributes (similar to Hiei-Blog)
+class LanguageSwitcher {
+    constructor() {
+        this.currentLang = 'en';
+        this.init();
+    }
+    
+    init() {
+        // Load saved language preference
+        const savedLang = localStorage.getItem('memospace-lang') || 'en';
+        this.currentLang = savedLang;
+        this.applyLanguage(savedLang);
+        this.bindEvents();
+    }
+    
+    bindEvents() {
+        // Language switcher dropdown
+        const langSwitcher = document.querySelector('.language-switcher');
+        const langBtn = document.querySelector('.language-btn');
+        const langDropdown = document.querySelector('.language-dropdown');
+
+        if (langBtn && langDropdown) {
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.classList.toggle('show');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('show');
+            });
+
+            // Prevent dropdown close when clicking inside
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            // Handle language option clicks
+            const langOptions = document.querySelectorAll('.language-option');
+            langOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const selectedLang = option.getAttribute('data-lang');
+                    this.setLanguage(selectedLang);
+                    langDropdown.classList.remove('show');
+                });
+            });
+        }
+    }
+    
+    setLanguage(lang) {
+        this.currentLang = lang;
+        this.applyLanguage(lang);
+        localStorage.setItem('memospace-lang', lang);
+    }
+    
+    applyLanguage(lang) {
+        document.documentElement.setAttribute('lang', lang);
+        document.body.setAttribute('data-lang', lang);
+        
+        // Update language button text
+        const langText = document.querySelector('.lang-text');
+        if (langText) {
+            const langNames = {
+                'en': 'English',
+                'zh-TW': '繁體中文',
+                'zh-CN': '简体中文'
+            };
+            langText.textContent = langNames[lang] || 'English';
+        }
+        
+        // Update all elements with data attributes
+        const elements = document.querySelectorAll('[data-en]');
+        elements.forEach(element => {
+            const text = element.getAttribute(`data-${lang}`);
+            if (text) {
+                if (element.tagName === 'INPUT' && element.type === 'text') {
+                    element.placeholder = text;
+                } else {
+                    element.innerHTML = text;
+                }
+            }
+        });
+    }
+}
+
+// Initialize language switcher when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    window.languageSwitcher = new LanguageSwitcher();
+    
+    // Enhanced glassmorphism hover effects
+    const glassElements = document.querySelectorAll('.glass, .feature-card, .team-card');
+    glassElements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+            element.style.transform = 'translateY(-8px) scale(1.02)';
+            element.style.backdropFilter = 'blur(30px) saturate(150%)';
+            element.style.boxShadow = '0 32px 64px rgba(0, 0, 0, 0.3), 0 16px 32px rgba(255, 255, 255, 0.1) inset';
+        });
+        
+        element.addEventListener('mouseleave', () => {
+            element.style.transform = 'translateY(0) scale(1)';
+            element.style.backdropFilter = 'blur(20px) saturate(120%)';
+            element.style.boxShadow = '0 16px 32px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(255, 255, 255, 0.1) inset';
+        });
+    });
+});
+
+// ===== ENHANCED GLASSMORPHISM EFFECTS =====
+
+// Particle system for enhanced visual effects
+class ParticleSystem {
+    constructor(container) {
+        this.container = container;
+        this.particles = [];
+        this.init();
+    }
+
+    init() {
+        this.canvas = document.createElement('canvas');
+        this.canvas.className = 'particle-canvas';
+        this.ctx = this.canvas.getContext('2d');
+        this.container.appendChild(this.canvas);
+        
+        this.resize();
+        this.createParticles();
+        this.animate();
+        
+        window.addEventListener('resize', () => this.resize());
+    }
+
+    resize() {
+        this.canvas.width = this.container.offsetWidth;
+        this.canvas.height = this.container.offsetHeight;
+    }
+
+    createParticles() {
+        const count = Math.floor((this.canvas.width * this.canvas.height) / 20000);
+        for (let i = 0; i < count; i++) {
+            this.particles.push({
+                x: Math.random() * this.canvas.width,
+                y: Math.random() * this.canvas.height,
+                size: Math.random() * 2 + 1,
+                speedX: (Math.random() - 0.5) * 0.5,
+                speedY: (Math.random() - 0.5) * 0.5,
+                opacity: Math.random() * 0.3 + 0.1
+            });
+        }
+    }
+
+    animate() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.particles.forEach(particle => {
+            particle.x += particle.speedX;
+            particle.y += particle.speedY;
+            
+            if (particle.x < 0 || particle.x > this.canvas.width) particle.speedX *= -1;
+            if (particle.y < 0 || particle.y > this.canvas.height) particle.speedY *= -1;
+            
+            this.ctx.beginPath();
+            this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+            this.ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
+            this.ctx.fill();
+        });
+        
+        requestAnimationFrame(() => this.animate());
+    }
+}
+
+// Initialize particle system on hero section
+document.addEventListener('DOMContentLoaded', () => {
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        new ParticleSystem(heroSection);
+    }
+});

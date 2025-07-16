@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MemoSpace Vision OS</title>
+    <meta name="description" content="Get in touch with the MemoSpace team. We'd love to hear from you.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">MemoSpace</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-content glass-panel">
+                    <h1 class="contact-title">
+                        Get in <span class="gradient-text">Touch</span>
+                    </h1>
+                    <p class="contact-subtitle">
+                        Have a question about MemoSpace? Want to join our beta program? 
+                        We'd love to hear from you.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 class="contact-info-title gradient-text">Let's Start a Conversation</h2>
+                        <p class="contact-info-text">
+                            <!-- PLACEHOLDER: Customize contact description -->
+                            Whether you're interested in our beta program, have feedback to share, 
+                            or want to explore partnership opportunities, we're here to listen.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Email Us</h3>
+                                    <p>hello@memospace.com</p>
+                                    <!-- PLACEHOLDER: Replace with your actual email -->
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Visit Us</h3>
+                                    <p>
+                                        <!-- PLACEHOLDER: Replace with your actual address -->
+                                        San Francisco, CA<br>
+                                        United States
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Follow Us</h3>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link">Twitter</a>
+                                        <a href="#" class="social-link">LinkedIn</a>
+                                        <!-- PLACEHOLDER: Add your actual social media links -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form 
+                            id="contact-form" 
+                            class="contact-form glass-card"
+                            action="https://formspree.io/f/YOUR_FORM_ID"
+                            method="POST"
+                        >
+                            <!-- PLACEHOLDER: Replace YOUR_FORM_ID with your actual Formspree form ID -->
+                            <!-- Alternative: Use Netlify Forms by adding netlify attribute to form tag -->
+                            
+                            <h3 class="form-title">Send us a message</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input 
+                                        type="text" 
+                                        id="firstName" 
+                                        name="firstName" 
+                                        class="form-input" 
+                                        required
+                                        placeholder="Your first name"
+                                    >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input 
+                                        type="text" 
+                                        id="lastName" 
+                                        name="lastName" 
+                                        class="form-input" 
+                                        required
+                                        placeholder="Your last name"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    required
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company (Optional)</label>
+                                <input 
+                                    type="text" 
+                                    id="company" 
+                                    name="company" 
+                                    class="form-input" 
+                                    placeholder="Your company name"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Please select a topic</option>
+                                    <option value="beta">Beta Program Interest</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="support">Support Request</option>
+                                    <option value="media">Media Inquiry</option>
+                                    <option value="feedback">Product Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    required
+                                    placeholder="Tell us more about your inquiry..."
+                                    rows="6"
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                    <span class="checkmark"></span>
+                                    I'd like to receive updates about MemoSpace and new features
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and <a href="#" class="privacy-link">Terms of Service</a> *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span>Send Message</span>
+                            </button>
+
+                            <!-- Hidden fields for spam protection -->
+                            <input type="text" name="_gotcha" style="display:none !important">
+                            <input type="hidden" name="_subject" value="New contact form submission from MemoSpace website">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">
+                        Quick answers to common questions
+                    </p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item glass-card">
+                        <h3 class="faq-question">When will MemoSpace be available?</h3>
+                        <p class="faq-answer">
+                            <!-- PLACEHOLDER: Customize FAQ answer -->
+                            MemoSpace is currently in development with a planned beta release in Q3 2025. 
+                            Sign up for our newsletter to be notified when beta testing begins.
+                        </p>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <h3 class="faq-question">What devices will MemoSpace support?</h3>
+                        <p class="faq-answer">
+                            <!-- PLACEHOLDER: Customize FAQ answer -->
+                            MemoSpace is designed primarily for Apple Vision Pro, with plans to expand 
+                            to other spatial computing platforms as they become available.
+                        </p>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <h3 class="faq-question">How does MemoSpace protect my privacy?</h3>
+                        <p class="faq-answer">
+                            <!-- PLACEHOLDER: Customize FAQ answer -->
+                            All your data is encrypted end-to-end and stored locally on your device. 
+                            We never access, analyze, or share your personal memories and information.
+                        </p>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <h3 class="faq-question">Can I sync data across multiple devices?</h3>
+                        <p class="faq-answer">
+                            <!-- PLACEHOLDER: Customize FAQ answer -->
+                            Yes, MemoSpace will sync seamlessly across all your Apple devices using 
+                            iCloud, maintaining the same level of privacy and security.
+                        </p>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <h3 class="faq-question">How much will MemoSpace cost?</h3>
+                        <p class="faq-answer">
+                            <!-- PLACEHOLDER: Customize FAQ answer -->
+                            We're still finalizing our pricing model. Beta testers will receive 
+                            special early-bird pricing when the product launches.
+                        </p>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <h3 class="faq-question">Do you offer enterprise solutions?</h3>
+                        <p class="faq-answer">
+                            <!-- PLACEHOLDER: Customize FAQ answer -->
+                            We're exploring enterprise applications for team collaboration and 
+                            knowledge management. Contact us to discuss your organization's needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer glass-panel">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">MemoSpace</h3>
+                    <p class="footer-tagline">Reimagining spatial computing</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">System Requirements</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MemoSpace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
